@@ -19,7 +19,7 @@ ContributorController.prototype.get = function(location, limit) {
                     });
                 } else {
                     var items = data.items;
-                    if (!!limit) {
+                    if (!!limit && limit <= items.length) {
                         items = items.slice(0, limit);
                     }
                     resolve({
