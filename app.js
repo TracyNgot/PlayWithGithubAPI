@@ -7,7 +7,7 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(bodyParser.json());
 
-var port = process.env.PORT || 8080;
+var port = process.env.PORT || 3000;
 
 var api = require('./routes/api');
 app.use('/', api.index);
