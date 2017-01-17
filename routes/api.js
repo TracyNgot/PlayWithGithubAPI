@@ -9,7 +9,6 @@ routes.index = router.get('/', function(req, res) {
 });
 
 routes.contributors = router.get(['/contributors', '/contributors/:location', '/contributors/:location/:limit'], function(req, res) {
-    console.log(req.get('X-myAPI-Token'), config.token);
     if (req.get('X-myAPI-Token') === config.token) {
         contributors.get(req.params.location, req.params.limit)
             .then(function(data) {
