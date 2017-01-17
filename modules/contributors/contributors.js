@@ -39,9 +39,5 @@ ContributorController.prototype.get = function(location, limit) {
     });
 };
 
-ContributorController.prototype._setError = function() {
-    
-};
-
 var contributors = new ContributorController;
 module.exports = contributors;
