@@ -7,6 +7,7 @@ Libraries used : [BluebirdJS](http://bluebirdjs.com/), [Octonode](https://github
 Clone the repository and run the following command line :
 
     npm install
+    npm start
 Do not forget to modify the file "*env.json*" with your username and password GitHub and configure the header with the token (basic version) :
 
     X-myAPI-Token : "mySecureToken"
